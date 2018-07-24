@@ -6315,18 +6315,59 @@ a.text-dark:hover, a.text-dark:focus {
 
 .general {
   background-color: #D9E1EC;
-  position: absolute;
-  top: 70px;
-  bottom: 0;
+  height: 100%;
   width: 100%;
-  padding: 0 60px; }
+  padding: 0 60px;
+  padding-top: 39px; }
 
-main {
+.mid {
   padding: 0 78px; }
-  main div {
-    background-color: white; }
 
-.iconBar {
-  position: relative;
-  top: 39px;
-  height: 100px; }
+.row2 {
+  padding-top: 30px; }
+
+.container {
+  background-color: white;
+  height: 100px;
+  width: 86%;
+  text-align: center;
+  padding: 15px 35px; }
+  .container div {
+    padding: 10px; }
+
+.iconLabel {
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.blogContainer {
+  background-color: white;
+  height: 565px;
+  width: 86%; }
+  .blogContainer div {
+    margin-top: 70px; }
+    .blogContainer div img {
+      max-width: 100%;
+      max-height: 100%; }
+
+.imageContainer {
+  width: 14%; }
+  .imageContainer image {
+    margin-right: 33px; }
+
+.recBlogs {
+  height: 400px;
+  margin-bottom: 30px; }
+
+.radar {
+  height: 400px; }
+
+.blog {
+  padding: 20px;
+  height: 76px;
+  border-bottom: 1px solid #EFEFEF; }
+  .blog div {
+    padding: 10px; }
+
+aside div {
+  background-color: white;
+  width: 100%; }
