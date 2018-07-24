@@ -1,0 +1,38 @@
+// helpers load first
+//@import "helpers/variables.scss";
+
+// load vendor libs, but just what you need
+@import "vendor/bootstrap-custom";
+
+// load components
+//@import "components/buttons";
+
+// load components
+//@import "pages/home";
+
+.navbar-default{
+    background-color: #425773;
+    height: 70px;
+}
+
+.general{
+    background-color: #D9E1EC;
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    width:100%;
+    padding: 0 60px;
+}
+
+main{
+    padding: 0 78px;
+    div{
+        background-color: white;
+    }
+}
+
+.iconBar{
+    position:relative;
+    top: 39px;
+    height: 100px;
+}
