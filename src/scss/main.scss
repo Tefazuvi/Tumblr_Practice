@@ -42,6 +42,17 @@
     }
 }
 
+.padding0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.name{
+    p{
+    margin-bottom: 0;
+    }
+}
+
 .iconLabel{
     margin-top: 10px;
     margin-bottom: 0px;
@@ -54,8 +65,7 @@
     div{
         margin-top: 70px;
         img {
-            max-width: 100%;
-            max-height: 100%;
+            width: 100%;
         }
     }
 }
@@ -77,12 +87,22 @@
 }
 
 .blog{
-    padding: 20px;
+    padding: 10px;
     height: 76px;
     border-bottom: 1px solid #EFEFEF;
     div{
+        img{
         padding: 10px;
+        }
     }
+}
+
+.small-font{
+    font-size: 10px;
+}
+
+.fit {
+    display:inline-block;
 }
 
 aside{
