@@ -4,11 +4,7 @@
   "description": "Tumblr practice",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run sass\" \"npm run watch\"",
-    "server": "live-server ./dist",
-    "presass": "cp ./src/index.html ./dist/",
-    "sass": "node-sass -w ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap/scss/ -o ./dist/css/",
-    "watch": "copy-and-watch --watch src/**/*.{html}  dist/"
+    "start": "gulp start"
   },
   "repository": {
     "type": "git",
@@ -21,10 +17,16 @@
   },
   "homepage": "https://github.com/Tefazuvi/Tumblr_Practice#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "concurrently": "^3.6.1",
     "copy-and-watch": "^0.1.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-stylelint": "^7.0.0",
+    "gulp-webserver": "^0.9.1",
     "live-server": "^1.2.0",
-    "node-sass": "^4.9.2"
+    "node-sass": "^4.9.2",
+    "stylelint": "^9.4.0"
   },
   "dependencies": {
     "bootstrap": "^4.1.2"
