@@ -21,12 +21,27 @@ body {
 
 .navbar-row{
     width: 100%;
+    justify-content: space-between;
 }
 
 ::placeholder{
     padding: 40px;
     color: #d1d1d1;
     font-size: 14px;
+}
+
+.blog-row{
+    padding: 25px;
+    margin-left: 0px;
+}
+
+.last-row{
+    padding: 0px 25px;
+    margin-left: 0px;
+}
+
+.inline-elements{
+    display: inline-block;
 }
 
 .Search{
@@ -36,7 +51,8 @@ body {
     background-repeat: no-repeat; 
     background-position: 15px; 
     border: 0;
-    width: 100%;
+    width: 350px;
+    margin-left: 50px;
 }
 
 .title{
@@ -58,6 +74,32 @@ color: #696969;
     font-weight: 500;
     font-size: 16px;
     color: #696969;
+    margin-bottom: 0px;
+}
+
+.regular16{
+    font-size: 16px;
+    color: #b8b8b8;
+    margin-bottom: 0px;
+}
+
+.regular14{
+    font-size: 14px;
+    color: #b8b8b8;
+    margin-bottom: 0px;
+}
+
+.regular14-bold{
+    font-size: 14px;
+    color: #b8b8b8;
+    font-weight: bold;
+}
+
+.hyperlink{
+    margin-left: 20px;
+    font-size: 16px;
+    color: #56B1DC;
+    margin-bottom: 0px;
 }
 
 .navbar-default {
@@ -74,8 +116,35 @@ color: #696969;
     padding-top: 39px;
 }
 
+.img-background{
+    background-color: #49A3CF;
+    border-radius: 10%;
+    background-image: url('../assets/images/pen.png');
+    background-size: 17px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 30px;
+    height: 30px;  
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.main-img{
+    background-image: url('../assets/images/mainPhoto.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%;
+    height: 375px;
+}
+
 .margin0{
     margin: 0px;
+}
+
+.margin-left{
+    margin-left: 25px;
 }
 
 .icons{
@@ -88,11 +157,6 @@ color: #696969;
 .navbar-icons{
     margin-left: 15px;
     margin-right: 15px;
-}
-
-.right{
-    position: relative;
-    right: 0px;
 }
 
 .mid {
@@ -132,15 +196,13 @@ color: #696969;
 
 .blogContainer {
     background-color: #fff;
-    height: 565px;
     width: 86%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    div {
-        margin-top: 70px;
-        img {
-            width: 100%;
-        }
-    }
+.main-img {
+    width: 100%;
 }
 
 .imageContainer {
