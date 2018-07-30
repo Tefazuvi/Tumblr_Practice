@@ -1,23 +1,16 @@
 /* Gulpfile.js */
 let gulp = require('gulp')
-//let gutil =  require('gulp-util')
 let sass = require('gulp-sass')
 let webserver = require('gulp-webserver');
 let stylelint = require('gulp-stylelint');
 let path = require('path')
-
-/* tasks */
-// gulp.task(
-//   name : String,
-//   deps : [] :: optional,
-//   cb : fn
-// )
 
 /* Styles task */
 gulp.task('styles', () => {
     return gulp.src('src/scss/main.scss')
         .pipe(sass({
             includePaths: [
+                path.join(__dirname, 'node_modules/bootstrap/dist/js'),
                 path.join(__dirname, 'node_modules/bootstrap/scss/'),
                 path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/scss/'),
                 path.join(__dirname, 'src/scss')]
@@ -25,6 +18,12 @@ gulp.task('styles', () => {
         }))
         .pipe(gulp.dest('dist/css/'))
 })
+
+// Move the javascript files into our /src/js folder
+gulp.task('js', function() {
+    return gulp.src([ 'node_modules/jquery/dist/jquery.min.js','node_modules/bootstrap/dist/js/bootstrap.min.js'])
+        .pipe(gulp.dest("dist/js"))
+});
 
 gulp.task('html', () => {
     return gulp.src('src/**/*.html')
@@ -65,6 +64,7 @@ gulp.task('linter', function lintCssTask() {
 gulp.task('start', [
     'html',
     'styles',
+    'js',
     //'linter',
     'fonts',
     'server',
