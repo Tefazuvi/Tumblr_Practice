@@ -51,6 +51,7 @@ body {
     display: inline-block; 
     background: url('../assets/images/sprite.png') no-repeat; 
 }
+<<<<<<< HEAD
  
 .upload { 
     background-position: -0px -0px; 
@@ -63,6 +64,8 @@ body {
     width: 46px; 
     height: 46px; 
 }
+=======
+>>>>>>> Develop
 
 .photo { 
     background-position: -0px -79px; 
@@ -298,3 +301,73 @@ body {
     height: 375px;
     margin: 25px 0px;
 }
+<<<<<<< HEAD
+=======
+
+//modal
+
+.right-border{
+    border-right: 2px solid #dddddd;
+}
+
+.modal-panel{
+    height: 200px;
+    width: 280px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body{
+    display: flex;
+    padding: $zero;
+}
+
+h5{
+    font-size: 16px;
+    padding: 10px;
+}
+
+ 
+.upload { 
+    background-position: -0px -0px; 
+    width: 48px; 
+    height: 33px;
+    margin: 20px;
+}
+
+.upload2 { 
+    background-position: -0px -33px; 
+    width: 46px; 
+    height: 46px; 
+    margin: 20px;
+}
+
+.post-button{
+    color: #fff;
+    background-color: #4DAEDB;
+    border: $zero;
+    border-radius: 5px;
+    width: 95px;
+    height: 35px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.close-button{
+    background-color: transparent;
+    border: $zero;
+    width: 50px;
+    height: 35px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.modal-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+>>>>>>> Develop
