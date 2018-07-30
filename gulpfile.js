@@ -70,3 +70,12 @@ gulp.task('start', [
     'server',
     'watch'
 ], cb => cb)
+
+
+gulp.task('build', [
+    'html',
+    'styles',
+    'js',
+    //'linter',
+    'fonts'
+], cb => cb)
