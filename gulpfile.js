@@ -7,7 +7,7 @@ let path = require('path')
 
 /* Styles task */
 gulp.task('styles', () => {
-    return gulp.src('src/scss/main.scss')
+    return gulp.src(['src/scss/main.scss','src/scss/login.scss'])
         .pipe(sass({
             includePaths: [
                 path.join(__dirname, 'node_modules/bootstrap/dist/js'),
