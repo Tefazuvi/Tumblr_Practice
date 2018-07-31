@@ -21,7 +21,7 @@ gulp.task('styles', () => {
 
 // Move the javascript files into our /src/js folder
 gulp.task('js', function() {
-    return gulp.src([ 'node_modules/jquery/dist/jquery.min.js','node_modules/bootstrap/dist/js/bootstrap.min.js'])
+    return gulp.src([ 'node_modules/jquery/dist/jquery.min.js','node_modules/bootstrap/dist/js/bootstrap.min.js','src/main.js'])
         .pipe(gulp.dest("dist/js"))
 });
 

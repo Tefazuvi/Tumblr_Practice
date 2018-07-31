@@ -14,9 +14,10 @@
             <div class="col-md-4">
                 <div class="logo">
                 </div>
-                <input class="Email" type="text" name="Email" placeholder="Email">
-                <button class="next-button" type="button">Next</button>
-                <button class="signup-button" type="button">Sign up</button>
+                <input class="Email" type="text" id="email" name="mail" placeholder="Email">
+                <p class="alert-msg" id="alert"></p>
+                <button class="next-button" id="next_btn" onclick="Module.showPassword()" type="button">Next</button>
+                <button class="signup-button" id="signup_btn" onclick="Module.login()" type="button" disabled>Sign up</button>
                 <div class="bottom-labels d-flex justify-content-around">
                     <label for="terms">Terms</label>
                     <label for="privacy">Privacy</label>
@@ -26,6 +27,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
